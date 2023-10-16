@@ -9,10 +9,10 @@ public static void main (String [] args) {
 public static void JFrameGUI() {
 	// Erstellt eine Grafische Oberfläche mit den folgenden Parametern
     JFrame frame = new JFrame();
-    JLabel label = new JLabel("Diese Frau nervt mich", JLabel.CENTER);
+    JLabel label = new JLabel("Das stehen eines Textes hier beweist nur das hier ein Text steht", JLabel.CENTER);
     frame.add(label);
     frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-    frame.setSize(300, 200);
+    frame.setSize(500, 300);
     frame.setVisible(true);
 }
 	}
