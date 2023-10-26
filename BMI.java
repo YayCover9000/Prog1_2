@@ -9,7 +9,6 @@ public class BMI {
         float KS;
         String res;
         int KSA;
-        int KSB;
         float ZKSB;
         float ZZKSB;
         int ZZZKSB;
@@ -33,5 +32,6 @@ public class BMI {
 
         
         System.out.println("Koerpergewicht: "+KG+" kg\nKoerpergroesse: "+KGROE+" m\nDer BMI betraegt: "+res);
+        sc.close();
     }
 }
