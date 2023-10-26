@@ -2,48 +2,35 @@ import java.util.Scanner;
 public class BMI {
     public static void main(String [] args) {
         Scanner sc = new Scanner(System.in);
-//        int KG = sc.nextInt();
-//        float KGROE = sc.nextFloat();
-        int KG = 75;
-        float KGROE = 1.8f;
+        int KG = sc.nextInt();
+        float KGROE = sc.nextFloat();
+        //int KG = 75;
+        //float KGROE = 1.8f;
         float KS;
-        float res;
-        System.out.println("1. " + KGROE);
+        String res;
+        int KSA;
+        int KSB;
+        float ZKSB;
+        float ZZKSB;
+        int ZZZKSB;
         
-        //KoerperGroesse zum Quadrat
-        KS = (float)Math.sqrt(KGROE);
-        System.out.println("3. " + KS);
+        KS = KGROE * KGROE;
+        KS = KG/KS;
+        System.out.println("1. " + KS);
+        KSA = (int)KS;
+        System.out.println("2. " + KSA);
+
+        ZKSB = (KS-KSA);
+        System.out.println("3. " + ZKSB);
         
-  
-        //Berechnung
-        //res = KG/(KGROE*KGROE);
-        res = KG/KS;
-   
-//        KGROE = Math.round(KGROE);
-//        System.out.println("2. " + KGROE);
-    
+        ZZKSB = ZKSB * 10;
+        System.out.println("4. " + ZZKSB);
         
+        ZZZKSB = (int)Math.round(ZZKSB);
+        System.out.println("5. " + ZZZKSB);
         
-        
-        //res = KG/KGROE;
-        
-        float a = 1.8f;
-        float b = 2.5f;
-        float c = a*a;
-        c = c*100;
-        //System.out.println(c);
-        c = Math.round(c);
-        c = c/100;
-        int CA = (int)c;
-        System.out.println("CA"+CA);
-        int CB = (int)((c*100)%100);
-        System.out.println("CB"+CB);
-        double d = Math.sqrt(a);
-        float e = (float)Math.sqrt(a);
-        System.out.println("TEST: "+a+"\t"+b+"\t"+c+" \t"+d+"\t"+e);
-        System.out.println(CA+","+CB);
-        
-        
+        res = KSA + "," + ZZZKSB;
+
         
         System.out.println("Koerpergewicht: "+KG+" kg\nKoerpergroesse: "+KGROE+" m\nDer BMI betraegt: "+res);
     }
